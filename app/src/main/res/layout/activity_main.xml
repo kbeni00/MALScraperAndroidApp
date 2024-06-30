@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recyclerView"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_above="@id/buttonFetch"
+    android:layout_alignParentTop="true"
+    android:layout_marginBottom="8dp" />
+
+<Button
+    android:id="@+id/buttonFetch"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:text="Fetch" />
+
+<Button
+    android:id="@+id/buttonSettings"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_toEndOf="@id/buttonFetch"
+    android:layout_marginStart="16dp"
+    android:text="Settings" />
+</RelativeLayout>
+
